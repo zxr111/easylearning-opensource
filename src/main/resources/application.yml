@@ -1,0 +1,16 @@
+# Backend Application configuration for EasyLearning project.
+#
+spring:
+  profiles:
+    active: dev
+
+  # use datasource for developing.
+  datasource:
+    url: jdbc:mysql://localhost:3306/easylearning?useUnicode=true&characterEncoding=utf-8
+    username: el_dev_user
+    password: eldevelop1009
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  type-aliases-package: com.easylearning.elweb.entity
+  mapper-locations: classpath:mapper/*.xml
