@@ -26,6 +26,12 @@ mysql> GRANT ALL ON easylearning.* TO 'el_dev_user'@'localhost'
 
 不管您的电脑是什么系统，请打开IDEA IDE，在File选项中，有New一栏，New中选中"Project From Version Control",再选中"Git"。IDEA会要求您输入仓库的地址。这里输入github地址即可(注意是你fork出来的那个，不是我的)。
 
+![Github](https://s1.ax1x.com/2018/07/04/PVp86x.png)
+
+输入github地址和项目的本地路径，Clone前可以先test一下看看是否有效。
+
+![Github](https://s1.ax1x.com/2018/07/04/PVpRAg.png)
+
 随后等待clone，项目会自动导入。导入成功后，刷新maven下载依赖包即可。如果您之前没有进行过Spring开发，下载过程会比较长。
 
 默认使用IDEA自带的Maven，强烈建议更换为自己的，参考[IDEA配置Maven](https://zhuanlan.zhihu.com/p/28133184)，并且可以添加国内的镜像加快下载速度，参考[更换Maven源](https://www.jianshu.com/p/4d5bb95b56c5)
